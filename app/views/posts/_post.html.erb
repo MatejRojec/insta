@@ -14,4 +14,11 @@
     <%= post.keywords %>
   </p>
 
+  <p>
+    <strong>Images:</strong>
+    <%= post.images.each do |image| %>
+      <%= image_tag image, class: "img-fluid" %>
+    <% end %>
+  </p>
+
 </div>
